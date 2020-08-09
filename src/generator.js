@@ -20,9 +20,15 @@ for (let i = 1; i <= 5; i++) {
 
   if(i == 5){
     for (let x = 1; x <= 5; x++) { 
+      if(x == 1){
+        console.log("1CM = 10MM, logo é necessario multiplicar o numero de CM por 10 para descobrir os MM.");
+      }
       console.log(geraConversaoCMparaMM());  
     }
     for (let x = 1; x <= 5; x++) { 
+      if(x == 1){
+        console.log("1CM = 10MM, logo é necessario dividir o numero de MM por 10 para descobrir os CM.");
+      }
       console.log(geraConversaoMMparaCM());  
     }
   }
