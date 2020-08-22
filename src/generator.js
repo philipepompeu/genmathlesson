@@ -50,6 +50,12 @@ const geradorDeContaMonetaria = function geraContaMonetaria()
   let operacoes = ['-', '+'];
   let operacao = operacoes[randomInt(0,2)];
 
+  if (operacao == '-') {
+    let temp = numeroUm;
+    numeroUm = numeroUm < numeroDois ? numeroDois:numeroUm;
+    numeroDois = numeroDois == numeroUm?temp:numeroDois;
+  }
+
   let resultado = "R$"+ numeroUm.toString() + ","+ centavoUm;
   resultado+= " "+ operacao + " "
   resultado+= "R$"+ numeroDois.toString() + ","+ centavoDois + " = ?";
